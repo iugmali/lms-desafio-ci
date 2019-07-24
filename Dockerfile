@@ -1,5 +1,5 @@
 FROM scratch
 
-COPY gopath/bin/soma /soma
+COPY bin/soma /soma
 
 ENTRYPOINT ["/soma"]
