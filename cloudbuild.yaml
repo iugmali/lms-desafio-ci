@@ -1,14 +1,14 @@
 steps:
 
   - name: 'gcr.io/cloud-builders/go'
-    args: ['install', './src/lms-desafio-ci']
-    env: ['PROJECT_ROOT=lms-desafio-ci']
+    args: ['install', './src/soma']
+    env: ['PROJECT_ROOT=soma']
 
   - name: 'gcr.io/cloud-builders/go'
     args: ['test', 'soma']
-    env: ['PROJECT_ROOT=lms-desafio-ci']
+    env: ['PROJECT_ROOT=soma']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '--tag=gcr.io/$PROJECT_ID/lms-desafio-ci', '.']
+    args: ['build', '--tag=gcr.io/$PROJECT_ID/soma', '.']
 
-images: ['gcr.io/$PROJECT_ID/lms-desafio-ci']
+images: ['gcr.io/$PROJECT_ID/soma']
