@@ -1,6 +1,7 @@
 steps:
 
   # comment proposital
+  # mais uma linha
 
   - name: 'gcr.io/cloud-builders/go'
     args: ['install', './src/soma']
