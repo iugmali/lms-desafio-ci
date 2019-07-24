@@ -1,5 +1,7 @@
 steps:
 
+  # comment proposital
+
   - name: 'gcr.io/cloud-builders/go'
     args: ['install', './src/soma']
     env: ['GOPATH=.']
